@@ -1,0 +1,197 @@
+
+.header {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        font-size: 2em;
+        text-decoration: none;
+
+      }
+      .contentdiv{
+        display: flex;
+        margin-top: 50%;
+        align-items: center;
+        height: 700px
+      }
+      .contentdiv2{
+        
+        font-size: 40px;}
+      .logo {
+        width: 101px;
+        height: 89px;
+        filter: invert(100%);
+      }
+      .left {
+        color: white;
+        margin-left: 24px;
+        padding: 9px;
+      }
+      .menubar {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 12px;
+      }
+      .menubar div a {
+        margin: 8px;
+        padding: 4px;
+        text-decoration: none;
+        color:#A11515;
+      }
+      .menubar div a:hover {
+        color: white;
+        text-decoration: none;
+
+      }
+
+      .right {
+        display: flex;
+        align-items: center;
+      }
+      .btn {
+        margin-right: 24px;
+        padding: 8px;
+        font-weight: bold;
+        border: 2px solid white;
+        color: white;
+        text-decoration: none;
+      }
+      .btn:hover {
+        border: 2px solid red;
+        text-decoration:none;
+      }
+     
+      .social{
+        display: flex;
+        justify-content: space-around;
+        margin: 4px;
+      }
+      .social .icon a{
+        margin: 16px;
+        text-decoration: none;
+       
+      }
+      
+      .fix{
+        position: fixed;
+         width: 24px; 
+        right: 48px;
+        bottom: 24px;
+        background-color:black ;
+        opacity: 0.5;
+        border-radius: 120px;
+        text-align: center;
+        padding: 14px;
+        border: 2px solid white;
+        
+      }
+      .dropbtn {
+        background-color: black;
+        
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block; 
+        display: none;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      
+      .dropdown:hover .dropdown-content {
+        display: block;}
+      
+     
+
+      .burger {
+        width: 24px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+      }
+
+      .heading-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px;
+        text-align: left;
+        width: 50%;
+        border: 2px solid #A11515;
+        padding: 24px;
+        font-size: 20px;
+      }
+
+      @media only screen and (max-width:476px) {
+        .dropdown {
+          position: relative;
+          display: block;
+        
+        }
+        .right {
+          display: none;
+          
+        }
+        .header {
+          background-color: black;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          position: sticky;
+          top: 0;
+        }
+       
+        
+        }
+        .fix{
+          position: fixed;
+          /* width: 24px; */
+          right: 48px;
+          bottom: 24px;
+          background-color:black ;
+          opacity: 0.5;
+          border-radius: 120px;
+          text-align: center;
+          padding: 14px;
+          border: 2px solid white;
+        
+        }
+        .heading-content{
+          text-align: center;
+       
+        }
+        .contentdiv{
+          justify-content: center;
+          height: inherit;
+        }
+       
+      }
+
+
+      
